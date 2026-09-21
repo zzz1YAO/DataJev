@@ -3,6 +3,7 @@ name = "datajev"
 version = "0.1.0"
 description = "System-1 control for System-2 data agents. Let LLMs analyze; let Jev decide what to analyze next."
 requires-python = ">=3.12"
+authors = [{ name = "Ziyi Liu" }]
 dependencies = [
     "httpx>=0.28.1",
     "matplotlib>=3.11.2",
@@ -14,6 +15,10 @@ dependencies = [
 
 [project.scripts]
 datajev = "datajev.cli:main"
+
+[project.urls]
+Repository = "https://github.com/zzz1YAO/DataJev"
+Issues = "https://github.com/zzz1YAO/DataJev/issues"
 
 [build-system]
 requires = ["hatchling"]

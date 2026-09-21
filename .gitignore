@@ -1,6 +1,7 @@
 .env
 .env.*
 !.env.example
+plan.md
 __pycache__/
 *.pyc
 .venv/
@@ -9,6 +10,7 @@ dist/
 build/
 *.egg-info/
 .DS_Store
+.pytest_cache/
 runs/
 .mplcache/
 .uv-cache/
