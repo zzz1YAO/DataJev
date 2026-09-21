@@ -1,0 +1,28 @@
+[project]
+name = "datajev"
+version = "0.1.0"
+description = "System-1 control for System-2 data agents. Let LLMs analyze; let Jev decide what to analyze next."
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.2",
+    "openai>=3.16.2",
+    "pandas>=3.0.6",
+    "python-dotenv>=1.2.3",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+datajev = "datajev.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["datajev"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]

@@ -9,3 +9,6 @@ dist/
 build/
 *.egg-info/
 .DS_Store
+runs/
+.mplcache/
+.uv-cache/
